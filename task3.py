@@ -3,8 +3,10 @@
 который создаст список  в котором будут содержаться только  годы палиндром.
 """
 
+spisok=[]
 for i in range(0,2020):
     s=str(i)
     sObr=s[::-1]
     if s==sObr and len(s)!=1:
-        print(s)
+        spisok.append(s)
+print(spisok)
